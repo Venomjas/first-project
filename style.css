@@ -1,0 +1,176 @@
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #283136;
+    line-height: 24px;
+    margin: 0;
+}
+
+.container {
+    width: 1156px;
+    margin: 0 auto;
+}
+
+
+.main-button {
+
+}
+.main-container {
+    flex-grow: 1;
+}
+.navigation {
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.page-header {
+    background-color: #EEEEEE;
+}
+.slider{
+    background-color: #EEEEEE;
+}
+.navigation-list {
+    margin: 0;
+    padding: 0;
+}
+.basket-item {
+    margin-right: 0;
+}
+.navigation-item {
+    
+}
+.main-red-button {
+    background-color: red;
+    color: white;
+}
+.main-black-color {
+    color: #000000;
+}
+.footer {
+}
+.logo {
+    Width:159.87px;
+    Height:65.02px;
+}
+.navigation-list{
+    display: flex;
+
+    font-size: 16px;
+    text-transform: uppercase;   
+}
+.lead {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+.dop-lead{
+    font-size: 16px;
+    line-height: 24px;
+}
+.more{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.servise-title{
+    font-size: 24px;
+    text-transform: uppercase;
+     Weight: 700;
+     Line-height: 30px;
+}
+.servise-description{
+    font-size: 16px;
+    line-height: 24px;
+}
+.buy{
+    font-size: 16 px;
+    text-transform: uppercase;
+}
+.info-title{
+    font-size: 45px;
+    line-height: 45px;
+    weight: 500;
+    text-transform: uppercase;
+}
+.info-servise{
+    weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.info-adventages-item{
+    font-size: 16px;
+}
+.tab-of-description {
+    font-size: 16px;
+    line-height: 24px;
+    weight: 700;
+    text-transform: uppercase;
+}
+.dt-procent{
+    font-size: 16px;
+    line-height: 18px;
+}
+.dd-procent{
+    font-size: 45px;
+    line-height: 64px;
+    weight: 700;
+}
+.name-contacts{
+    font-size: 18px;
+    line-height: 30px;
+    weight: 700;
+}
+.adres-contacts {
+    font-size: 16px;
+    line-height: 18px;
+}
+.writ-us{
+    line-height: 18px;
+    font-size: 16px;
+    weight: 500;
+}
+.title-magazin {
+    font-size: 55px;
+    line-height: 55px;
+    weight: 500;
+}
+.legend {
+    font-size: 18px;
+    line-height: 30px;
+    weight: 700;
+    text-transform: uppercase;
+}
+.radio {
+    font-size: 16px;
+}
+.radio-1{
+    font-size: 16px;
+}
+.radio-2 {
+    font-size: 16px;
+}
+.submit-button {
+    font-size: 16px;
+}
+.sorting-title {
+    font-size: 18px;
+}
+.sorting-setting {
+    font-size:14 px;
+}
+.templates-title{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    weight: 700;
+}
+.templates-sub {
+    font-size: 16px;
+    line-height: 18px;
+}
+.pagination{
+    font-size: 16px;
+    line-height: 18px;
+}
