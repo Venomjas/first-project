@@ -8,42 +8,121 @@ body {
     margin: 0;
 }
 
-.container {
+.container-nav {
     width: 1156px;
     margin: 0 auto;
 }
-
-
 .main-button {
 
 }
 .main-container {
     flex-grow: 1;
 }
-.navigation {
-    line-height: 30px;
+.container {
+    width: 1440px;
     margin: 0 auto;
 }
+.navigation-container {
+    display: flex;
+    align-content: center;
+}
+.navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 45px;
+    list-style: none;
+}
+.basket-item {
+    margin-left: auto;
+    text-decoration: none;
+    margin-left: 285px;
+    
+}
+.navigation {
+    flex-grow: 1;
+    line-height: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+.navigation-link {
 
+}
+.navigation-container {
+    margin-bottom: 0;
+
+} 
+.information {
+    width: 1156px;
+    margin: 0 auto;
+}
 .page-header {
     background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+
 }
 .slider{
     background-color: #EEEEEE;
-}
-.navigation-list {
-    margin: 0;
-    padding: 0;
-}
-.basket-item {
-    margin-right: 0;
-}
-.navigation-item {
+    display: flex;
     
 }
+.info-slider {
+    display: flex;
+    justify-content: space-between;
+}
+.slide-1{
+    background-image: url('./nerds-index-slide1\ 1.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 431px;
+}
+.slide-2{
+    background-image: url('./nerds-index-slide2\ 1.png');
+    background-repeat: no-repeat;
+    position: relative;
+    position: absolute;
+    display: none;
+}
+.slide-3{
+    background-image: url('.nerds-index-slide3\ 1.png');
+    background-repeat: no-repeat;
+    position: relative;
+    position: absolute;
+    display: none;
+}
+.link {
+    color:#283136;
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+.servise-item {
+    width: 300px;
+    list-style: none;
+    }
+.servise-list {
+    display: flex;
+    justify-content: space-between;
+}
+.information {
+    width: 1156px;
+    margin: 0 auto; 
+}
 .main-red-button {
-    background-color: red;
+    background-color: #FB565A;
     color: white;
+    text-decoration: none;
 }
 .main-black-color {
     color: #000000;
@@ -51,6 +130,7 @@ body {
 .footer {
 }
 .logo {
+    margin-bottom: 0;
     Width:159.87px;
     Height:65.02px;
 }
@@ -64,63 +144,125 @@ body {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+    width: 538px;
+}
+.clients-container {
+    display: flex;
+    justify-content: space-around;
+}
+.clients {
+    display: flex;
+    justify-content: space-around;
 }
 .dop-lead{
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 38px;
+}
+.contacts {
+    width: 319px;
+    height: 308px;
 }
 .more{
     font-size: 16px;
     text-transform: uppercase;
+    padding: 54px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+}
+.container-info {
+    display: grid;
+    
+    grid-template-columns: 650px 1fr;
 }
 .servise-title{
     font-size: 24px;
     text-transform: uppercase;
-     Weight: 700;
-     Line-height: 30px;
+    font-Weight: 700;
+    Line-height: 30px;
+    margin-top: 20px;
 }
 .servise-description{
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 32px;
 }
+.servise-container {
+   margin-top: 80px;
+   margin-bottom: 121px;
+}
+.servise-item {}
 .buy{
+    padding: 40px;
+    padding-top: 17px;
+    padding-bottom: 15px;
     font-size: 16 px;
     text-transform: uppercase;
+    color: white;
 }
-.info-title{
+.green-buy {
+    background-color: #00CA74;
+} 
+.yellow-buy {
+    background-color: #EFC849;
+}
+.info {
+    
+}
+.info-title {
     font-size: 45px;
     line-height: 45px;
-    weight: 500;
+    font-weight: 500;
     text-transform: uppercase;
+    width: 651px;    
+    margin-bottom: 32px;
 }
-.info-servise{
-    weight: 700;
+.info-servise {
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
+    margin-bottom: 23px;
 }
-.info-adventages-item{
+.info-description {
+    margin-bottom:
+}
+.info-adventages-item {
     font-size: 16px;
+}
+.info-adventages-list {
+    line-height: 24px;
+}
+.indicators-block {
+    margin-left: 149px;
+}
+.indicators-illustration {
+    width: 360px;
 }
 .tab-of-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr min-content;
     font-size: 16px;
     line-height: 24px;
-    weight: 700;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.dt-procent{
+.table-head{
     font-size: 16px;
     line-height: 18px;
+    order: 2;
 }
-.dd-procent{
+.table-value{
+    order: 1;
     font-size: 45px;
     line-height: 64px;
-    weight: 700;
+    font-weight: 700;
 }
 .name-contacts{
     font-size: 18px;
     line-height: 30px;
-    weight: 700;
+    font-weight: 700;
 }
 .adres-contacts {
     font-size: 16px;
@@ -132,34 +274,65 @@ body {
     weight: 500;
 }
 .title-magazin {
+    padding-top: 87px;
+    padding-bottom: 108px;
+    text-align: center;
     font-size: 55px;
     line-height: 55px;
-    weight: 500;
+    font-weight: 500;
+    background-color: #EEEEEE;
+}
+.catalog-products {
+    display: flex;
+}
+.catalog-filter {
+    width: 260px;
+    margin-right: 140px;
+    margin-top: 55px;
+}
+.catalog-right-column {
+    width: 899px;
 }
 .legend {
     font-size: 18px;
     line-height: 30px;
-    weight: 700;
+    font-weight: 700;
     text-transform: uppercase;
 }
 .radio {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
 }
 .radio-1{
-    font-size: 16px;
+    
 }
 .radio-2 {
-    font-size: 16px;
+    
 }
 .submit-button {
     font-size: 16px;
 }
 .sorting-title {
     font-size: 18px;
+    margin-right: 266px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .sorting-setting {
-    font-size:14 px;
+    font-size: 14px;
 }
+.sorting-list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 227px;
+    margin-top: 55px;
+    margin-bottom: 48px;
+}
+.sorting {
+}
+
 .templates-title{
     text-transform: uppercase;
     font-size: 18px;
@@ -170,7 +343,25 @@ body {
     font-size: 16px;
     line-height: 18px;
 }
+.templates-list {
+    text-decoration: none;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    wrap: wrap;
+}
 .pagination{
     font-size: 16px;
     line-height: 18px;
+}
+.clients-list{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 126px;
+}
+.network-list {
+    display: flex;
 }

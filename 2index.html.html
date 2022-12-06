@@ -8,140 +8,176 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1 class="title-magazin">Магазин готовых шаблонов</h1>
+    <header class="container page-header">
+        <div class="navigation-container container">
+            <a href="" class="link">
+                <img src="./image/nerds-logo.svg" class="logo" alt="Логотип Нердс" width="160" height="65">
+            </a>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="studio.html">Студия</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="klients.html">Клиенты</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="shop.html">Магазин</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a class="link navigation-link" href="contacts.html">Контакты</a>
+                    </li>  
+
+                    <li class="navigation-item basket-item">
+                        <a class="link navigation-link" href="basket.html">Корзина</a>
+                    </li>
+                </ul>  
+            </nav>
+        </div>
     </header>  
-    <main>  
-        <form action="#" method="GET"> 
-            <fieldset>
-                <legend class="legend">cтоимость:</legend>
-                <input type="range" min="0" max="150 000" name="cost" id="cost">
+    <h1 class="title-magazin container">Магазин готовых шаблонов</h1>
+    <main class="catalog-products container">  
+        <div class="catalog-filter">
+            <form action="#" method="GET"> 
+                <fieldset class="radio radio-1">
+                    <legend class="legend">cтоимость:</legend>
+                    <input type="range" min="0" max="150 000" name="cost" id="cost">
 
-                <label for="cost-min"></label>
-                <input type="number" name="cost" id="cost">
-                
-                <label for="cost-max"></label>
-                <input type="number" name="cost" id="cost">
-            </fieldset>
-
-            <fieldset class="radio-1">
-                <legend class="legend">сетка:</legend>
-                
-                <label>
-                    <input type="radio" name="grid" value="adaptive">Адаптивная
-                </label>
-                
-                <label>
-                    <input type="radio" name="grid" value="fixed">Фиксированная              
-                </label> 
-                <label>
-                    <input type="radio" name="grid" value="rubber">Резиновая     
-                </label>
-            </fieldset>
-
-            <fieldset class="radio-2">
-                <legend class="legend">особенности:</legend>
-
-                <label for="slider">слайдер</label>
-                <input type="checkbox" name="slider" id="slider" checked>
-                
-                <label for="adventages">список приемуществ</label>
-                <input type="checkbox" name="adventages" id="adventages">
-
-                <label for="news">новости</label>
-                <input type="checkbox" name="news" id="news" checked>
-
-                <label for="gallary">Галлерея</label>    
-                <input type="checkbox" name="gallary" id="gallary">
-
-                <label for="basket">корзина</label>
-                <input type="checkbox" name="basket" id="basket">
-            </fieldset>
-
-            <button class="submit button" type="submit">Показать</button>
-        </form>
-        <section class="sorting">
-            <h2 class="sorting-title">сортировать</h2>
-            <ul class="sorting-list">
-                <li  class="sorting-setting">
-                    <button type="button">по цене</button>
-                </li>
-                <li  class="sorting-setting">
-                    <button type="button">по типу</button>
-                </li>
-                <li  class="sorting-setting">
-                    <button type="button">по названию</button>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2 class="visualy-hidden">Список шаблонов</h2>
-            <ul class="templates-list">
-                <li class="templates-item">
-                    <article>
-                        <img src="image\img-sedona 1.png">
-                        <h3 class="templates-title">Sedona</h3>
-                        <p class="templates-sub">информационный сайт для туристов</p>
-                        <a href="" class="link main-red-button">9900</a>
-                    </article>
-                </li>
-                <li class="templates-item">
-                    <article>
-                        <img src="image\img-pink 1.png">
-                        <h3 class="templates-title">pink app</h3>
-                        <p class="templates-sub">Продуктовый лендинг приложения для ios и android</p>
-                        <a href="" class="link main-red-button">9900</a>
-                    </article>
-                </li>
-                <li class="templates-item">
-                    <article>
-                        <img src="image\img-barbershop 1.png">
-                        <h3 class="templates-title">barbershop</h3>
-                        <p class="templates-sub">Сайт салона красоты.Для мужчин,да</p>
-                        <a href="" class="link main-red-button">9900</a>
-                    </article>    
-                </li>
-                <li class="templates-item">
-                    <article>
-                        <img src="image\img-mishka 1.png">
-                        <h3 class="templates-title">mishka</h3>
-                        <p class="templates-sub">Интернет-магазин вязаных игрушек</p>
-                        <a href="" class="link main-red-button">9900</a>
-                    </article>
-                </li>
-                <li class="templates-item">
-                    <article>
-                        <img src="image\img-aplus 1.png">
-                        <h3 class="templates-title">a-plus</h3>
-                        <p class="templates-sub">Лендинг курсов повышения квалификации</p>
-                        <a href="" class="link main-red-button">9900</a>
-                    </article>
+                    <label for="cost-min"></label>
+                    <input type="number" name="cost" id="cost">
                     
-                </li>
-                <li class="templates-item">
-                    <article>
-                        <img src="image\img-kvast 1.png">
-                        <h3 class="templates-title">кваст</h3>
-                        <p class="templates-sub">Промо-сайт производителя крафтового кваса</p>
-                        <a href=""class="link main-red-button">9900</a>
-                    </article>
-                </li>
-        </section>
-        <div class="pagination">
-            <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current">
-                    <a href="">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="">3</a>
-                </li>
-                <li classs="pagination-item pagination-next">
-                    <a href="">Следующая</a>
+                    <label for="cost-max"></label>
+                    <input type="number" name="cost" id="cost">
+                </fieldset>
+
+                <fieldset class="radio radio-2">
+                    <legend class="legend">сетка:</legend>
+                    
+                    <label>
+                        <input type="radio" name="grid" value="adaptive">Адаптивная
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="grid" value="fixed">Фиксированная              
+                    </label> 
+                    <label>
+                        <input type="radio" name="grid" value="rubber">Резиновая     
+                    </label>
+                </fieldset>
+
+                <fieldset class="radio radio-3">
+                    <legend class="legend">особенности:</legend>
+
+                    <label for="slider">слайдер</label>
+                    <input type="checkbox" name="slider" id="slider" checked>
+                    
+                    <label for="adventages">список приемуществ</label>
+                    <input type="checkbox" name="adventages" id="adventages">
+
+                    <label for="news">новости</label>
+                    <input type="checkbox" name="news" id="news" checked>
+
+                    <label for="gallary">Галлерея</label>    
+                    <input type="checkbox" name="gallary" id="gallary">
+
+                    <label for="basket">корзина</label>
+                    <input type="checkbox" name="basket" id="basket">
+                </fieldset>
+
+                <button class="submit button" type="submit">Показать</button>
+            </form>
+        </div>    
+        <div class="catalog-right-column">
+            <section class="sorting">
+                <h2 class="visually-hidden">Шаблоны</h2>
+                <ul class="sorting-list">
+                    <li class="sorting-title">
+                        сортировать
+                    </li>
+                    <li  class="sorting-setting">
+                        <button type="button">по цене</button>
+                    </li>
+                    <li  class="sorting-setting">
+                        <button type="button">по типу</button>
+                    </li>
+                    <li  class="sorting-setting">
+                        <button type="button">по названию</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="teplates-section">
+                <h2 class="visually-hidden">Список шаблонов</h2>
+                <ul class="templates-list">
+                    <li class="templates-item">
+                        <article>
+                            <img src="image\img-sedona 1.png">
+                            <h3 class="templates-title">Sedona</h3>
+                            <p class="templates-sub">информационный сайт для туристов</p>
+                            <a href="" class="link main-red-button">9900</a>
+                        </article>
+                    </li>
+                    <li class="templates-item">
+                        <article>
+                            <img src="image\img-pink 1.png">
+                            <h3 class="templates-title">pink app</h3>
+                            <p class="templates-sub">Продуктовый лендинг приложения для ios и android</p>
+                            <a href="" class="link main-red-button">9900</a>
+                        </article>
+                    </li>
+                    <li class="templates-item">
+                        <article>
+                            <img src="image\img-barbershop 1.png">
+                            <h3 class="templates-title">barbershop</h3>
+                            <p class="templates-sub">Сайт салона красоты.Для мужчин,да</p>
+                            <a href="" class="link main-red-button">9900</a>
+                        </article>    
+                    </li>
+                    <li class="templates-item">
+                        <article>
+                            <img src="image\img-mishka 1.png">
+                            <h3 class="templates-title">mishka</h3>
+                            <p class="templates-sub">Интернет-магазин вязаных игрушек</p>
+                            <a href="" class="link main-red-button">9900</a>
+                        </article>
+                    </li>
+                    <li class="templates-item">
+                        <article>
+                            <img src="image\img-aplus 1.png">
+                            <h3 class="templates-title">a-plus</h3>
+                            <p class="templates-sub">Лендинг курсов повышения квалификации</p>
+                            <a href="" class="link main-red-button">9900</a>
+                        </article>
+                        
+                    </li>
+                    <li class="templates-item">
+                        <article>
+                            <img src="image\img-kvast 1.png">
+                            <h3 class="templates-title">кваст</h3>
+                            <p class="templates-sub">Промо-сайт производителя крафтового кваса</p>
+                            <a href=""class="link main-red-button">9900</a>
+                        </article>
+                    </li>
+
+            </section>
+                <div class="pagination">
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item-current">
+                        <a href="">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="">3</a>
+                    </li>
+                    <li classs="pagination-item pagination-next">
+                        <a href="">Следующая</a>
                 </li>
             </ul>
+            </div>
         </div>
     </main>
 </body>
