@@ -36,9 +36,10 @@ body {
 .basket-item {
     margin-left: auto;
     text-decoration: none;
-    margin-left: 285px;
-    
+    margin-left: 285px;        
 }
+.navigation-item {
+}   
 .navigation {
     flex-grow: 1;
     line-height: 30px;
@@ -48,7 +49,9 @@ body {
     margin-left: 200px;
 }
 .navigation-link {
-
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .navigation-container {
     margin-bottom: 0;
@@ -74,20 +77,20 @@ body {
     justify-content: space-between;
 }
 .slide-1{
-    background-image: url('./nerds-index-slide1\ 1.png');
+    background-image: url('./image/nerds-index-slide1\ 1.png');
     background-repeat: no-repeat;
     background-position: top right;
     height: 431px;
 }
 .slide-2{
-    background-image: url('./nerds-index-slide2\ 1.png');
+    background-image: url('./image/nerds-index-slide2\ 1.png');
     background-repeat: no-repeat;
     position: relative;
     position: absolute;
     display: none;
 }
 .slide-3{
-    background-image: url('.nerds-index-slide3\ 1.png');
+    background-image: url('./image/nerds-index-slide3\ 1.png');
     background-repeat: no-repeat;
     position: relative;
     position: absolute;
@@ -175,13 +178,6 @@ body {
     
     grid-template-columns: 650px 1fr;
 }
-.servise-title{
-    font-size: 24px;
-    text-transform: uppercase;
-    font-Weight: 700;
-    Line-height: 30px;
-    margin-top: 20px;
-}
 .servise-description{
     font-size: 16px;
     line-height: 24px;
@@ -191,7 +187,14 @@ body {
    margin-top: 80px;
    margin-bottom: 121px;
 }
-.servise-item {}
+.servise-title{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-Weight: 700;
+    Line-height: 30px;
+    margin-top: 20px;
+    color: #000000;
+}
 .buy{
     padding: 40px;
     padding-top: 17px;
@@ -216,6 +219,7 @@ body {
     text-transform: uppercase;
     width: 651px;    
     margin-bottom: 32px;
+    color:#000000;
 }
 .info-servise {
     font-weight: 700;
@@ -223,21 +227,31 @@ body {
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 23px;
+    color: #000000;
 }
 .info-description {
     margin-bottom:
 }
 .info-adventages-item {
     font-size: 16px;
+    line-height: 24px;
 }
 .info-adventages-list {
     line-height: 24px;
+    list-style: none;
+}
+.info ul li {
+    margin-bottom: 24px;
 }
 .indicators-block {
     margin-left: 149px;
 }
 .indicators-illustration {
     width: 360px;
+}
+.indicators-title {
+    color: #000000;
+    text-transform: uppercase;
 }
 .tab-of-description {
     display: grid;
@@ -263,15 +277,34 @@ body {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    margin-top: 49px;
+    margin-right: 50px;
 }
 .adres-contacts {
     font-size: 16px;
     line-height: 18px;
+    margin-top: 23px;
+    margin-bottom: 37px;
+    margin-right: 50px;
 }
-.writ-us{
+.contacts {
+    background-color: #fff;
+    width:319px;
+    height: 308px;
+    margin: 54px 140px;
+    position: relative;
+    position: absolute;
+    margin-right: 50px;
+}
+.write-us{
     line-height: 18px;
     font-size: 16px;
     weight: 500;
+    margin-bottom: 47px;
+    padding-top: 15px;
+    padding-bottom:17px;
+    padding-left:44px;
+    padding-right: 45px;
 }
 .title-magazin {
     padding-top: 87px;
@@ -298,6 +331,7 @@ body {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #000000;
 }
 .radio {
     display: flex;
@@ -322,6 +356,9 @@ body {
 .sorting-setting {
     font-size: 14px;
 }
+.title-magazin {
+    color: #000000;
+}
 .sorting-list{
     list-style: none;
     display: flex;
@@ -344,24 +381,40 @@ body {
     line-height: 18px;
 }
 .templates-list {
-    text-decoration: none;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     wrap: wrap;
+    list-style: none;
 }
 .pagination{
     font-size: 16px;
     line-height: 18px;
 }
 .clients-list{
-    margin: 0;
+    marginf: 0;
     padding: 0;
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 126px;
+    margin-bottom: 80px;
+    margin-top: 73px;
 }
 .network-list {
     display: flex;
+    list-style: none;
+}
+.mask {
+    background-color: #EEEEEE;
+    width: 360px;
+    height: 231px;
+    position: relative;
+    position: absolute;
+}
+.mask-price {
+    width: 200px;
+    height: 50px;f
+}
+.templates-sub {
+    color: #666666;
 }
