@@ -121,6 +121,7 @@ body {
     background-color: #FB565A;
     color: white;
     text-decoration: none;
+    border-radius: 3px;
 }
 .main-black-color {
     color: #000000;
@@ -158,6 +159,7 @@ body {
 .contacts {
     width: 319px;
     height: 308px;
+    z-index: 3;
 }
 .more{
     font-size: 16px;
@@ -267,17 +269,19 @@ body {
     font-weight: 700;
     margin-top: 49px;
     margin-right: 50px;
+    margin-left: 50px;
 }
 .adres-contacts {
     font-size: 16px;
     line-height: 18px;
+    font-weight: 400;
     margin-top: 23px;
     margin-bottom: 37px;
-    margin-right: 50px;
+    margin-left: 50px;
 }
 .contacts {
     background-color: #fff;
-    width:319px;
+    width: 319px;
     height: 308px;
     margin: 54px 140px;
     position: relative;
@@ -290,9 +294,10 @@ body {
     font-weight: 500;
     margin-bottom: 47px;
     padding-top: 15px;
-    padding-bottom:17px;
-    padding-left:44px;
+    padding-bottom: 17px;
+    padding-left: 44px;
     padding-right: 45px;
+    margin-left: 50px;
 }
 .title-magazin {
     padding-top: 87px;
@@ -338,6 +343,11 @@ body {
 }
 .sorting-setting {
     font-size: 14px;
+    margin-right: 25px; 
+    text-decoration: none; 
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .title-magazin {
     color: #000000;
@@ -346,29 +356,65 @@ body {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 227px;
     margin-top: 55px;
     margin-bottom: 48px;
+    text-transform: uppercase;
+    background-image: url(./image/up-arrow.svg);
+    background-image: url(./image/down-arrow.svg);
+    background-repeat: no-repeat;
 }
 .templates-title{
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+.tamplates-item {
+    margin-top: 40px;
 }
 .templates-sub {
     font-size: 16px;
     line-height: 18px;
+    margin-bottom: 32px;
+    text-align: center;
+    margin: 0 auto;
 }
 .templates-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     list-style: none;
+    row-gap: 30px;
+    column-gap: 40px;
 }
-.pagination{
+.pagination-list{
     font-size: 16px;
     line-height: 18px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 60px;
+}
+.pagination-item{
+    padding: 20px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    margin-right: 11px;
+    border-radius: 3px;
+    background-color: #DBDBDB;
+}
+.pagination-next {
+    padding-left: 77px;
+    padding-right: 78px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+    background-color: #DBDBDB;
+}
+.pagination-link {
+    text-decoration: none;
+    color: #000000;
 }
 .clients-list{
     margin: 0;
@@ -383,6 +429,7 @@ body {
 .network-list {
     display: flex;
     list-style: none;
+    padding-left: 0;
 }
 .mask {
     background-color: #EEEEEE;
@@ -391,10 +438,82 @@ body {
     position: relative;
     position: absolute;
 }
-.mask-price {
+.mask-price {d
     width: 200px;
     height: 50px;
 }
 .templates-sub {
     color: #666666;
+    margin-bottom: 32px;
+}
+.map-iframe .popup {
+    visibility: hidden !important;
+}
+.product{
+    position: relative;
+    background-image: url(./image/Shape.svg);
+    background-repeat: no-repeat;
+}
+.product-description {
+    width: 360px;
+    height: 231px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #EEEEEE;
+}
+.social-link-vk {
+    display: block;
+    background-image: url("./image/vk-icon.svg");
+    background-repeat: no-repeat;
+    background-color: #E1E1E1;
+    background-position: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+.social-link-fb {
+    display: block;
+    background-image: url("./image/fb.svg");
+    background-repeat: no-repeat;
+    background-color: #E1E1E1;
+    background-position: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+.social-link-ins {
+    display: block;
+    background-image: url("./image/ins.svg");
+    background-repeat: no-repeat;
+    background-color: #E1E1E1;
+    background-position: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    margin-right: 139px;
+}
+.price-button {
+    margin-top: 33px;
+    padding: 72px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    margin-bottom: 44px;
+}
+.friendly-list {
+    color: #444444;
+}
+.invite-friend {
+    color:#000000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.social-list {
+    display: flex;
+    margin-left: 140px;
+    margin-top: 68px;
 }
