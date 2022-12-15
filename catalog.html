@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,11 +49,12 @@
                     <legend class="legend">cтоимость:</legend>
                     <input type="range" min="0" max="150 000" name="cost" id="cost">
 
-                    <label for="cost-min"></label>
-                    <input type="number" name="cost" id="cost">
-                    
-                    <label for="cost-max"></label>
-                    <input type="number" name="cost" id="cost">
+                <label for="cost-min">
+                    <input type="number" name="cost" id="cost-min">
+                </label>
+                <label for="cost-max">
+                    <input type="number" name="cost" id="cost-max">
+                </label>
                 </fieldset>
 
                 <fieldset class="radio radio-2">
@@ -89,13 +93,13 @@
 
                 <button class="submit button" type="submit">Показать</button>
             </form>
-        </div>    
+        </div>
+        <h2 class="visually-hidden">Шаблоны</h2>    
         <div class="catalog-right-column">
             <section class="sorting">
-                <h2 class="visually-hidden">Шаблоны</h2>
                 <ul class="sorting-list">
                     <li class="sorting-title">
-                        сортировать
+                        сортировать:
                     </li>
                     <li  class="sorting-setting">
                         <a class="link" href="">по цене</a>
@@ -106,14 +110,19 @@
                     <li  class="sorting-setting">
                         <a class="link" href="">по названию</a>
                     </li>
+                    <li class="sorting-setting by-ascending">
+                        <a class="visually-hidden" href="">по уменьшению</a>
+                    </li>
+                    <li class="sorting-setting by-reducing">                        
+                        <a class="visually-hidden" href="">по уменьшению</a>
+                    </li>
                 </ul>
             </section>
             <section class="templates-section">
-                <h2 class="visually-hidden">Список шаблонов</h2>
                 <ul class="templates-list">
                     <li class="templates-item">
                         <article class="product">
-                            <img src="./image/img-sedona 1.png">d
+                            <img src="./image/img-sedona 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">Sedona</h3>
                                 <p class="templates-sub">информационный сайт<br> для туристов</p>
@@ -123,7 +132,7 @@
                     </li>
                     <li class="templates-item">
                         <article class="product">
-                            <img src="./image/img-pink 1.png">
+                            <img src="./image/img-pink 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">pink app</h3>
                                 <p class="templates-sub">Продуктовый лендинг<br> приложения для ios и android</p>
@@ -133,7 +142,7 @@
                     </li>
                     <li class="templates-item">
                         <article class="product">
-                            <img src="./image/img-barbershop 1.png">
+                            <img src="./image/img-barbershop 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">barbershop</h3>
                                 <p class="templates-sub">Сайт салона красоты.<br>Для мужчин,да</p>
@@ -143,7 +152,7 @@
                     </li>
                     <li class="templates-item">
                         <article class="product">
-                            <img src="./image/img-mishka 1.png">
+                            <img src="./image/img-mishka 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">mishka</h3>
                                 <p class="templates-sub">Интернет-магазин<br> вязаных игрушек</p>
@@ -153,7 +162,7 @@
                     </li>
                     <li class="templates-item">
                         <article class="product">
-                            <img src="./image/img-aplus 1.png">
+                            <img src="./image/img-aplus 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">a-plus</h3>
                                 <p class="templates-sub">Лендинг курсов повышения<br> квалификации</p>
@@ -164,7 +173,7 @@
                     </li>
                     <li class="templates-item">
                         <article class="product">
-                            <img src="./image/img-kvast 1.png">
+                            <img src="./image/img-kvast 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">кваст</h3>
                                 <p class="templates-sub">Промо-сайт производителя<br> крафтового кваса</p>
@@ -175,16 +184,16 @@
 
             </section>   
                 <ul class="pagination-list">
-                    <li class="pagination-link pagination-item pagination-item-current">
+                    <li class="pagination-item pagination-item-current">
                         <a class="pagination-link" href="">1</a>
                     </li>
-                    <li class="pagination-link pagination-item">
+                    <li class="pagination-item">
                         <a class="pagination-link" href="">2</a>
                     </li>
-                    <li class="pagination-link pagination-item">
+                    <li class="pagination-item">
                         <a class="pagination-link" href="">3</a>
                     </li>
-                    <li class="pagination-item pagination-next">
+                    <li class=" pagination-item pagination-item-next">
                         <a class="pagination-link" href="">Следующая</a>
                     </li>
             </ul>      
@@ -194,9 +203,9 @@
 <footer class="footer">
     <article class="contacts">  
         <h2 class="name-contacts">NЁRDS DESIGN STUDIO</h2>
-        <p class="adres-contacts">наб. Реки Карповки, 5 лит П,
-            Санкт-Петербург
-            
+        <p class="adres-contacts">наб. Реки Карповки,<br> 5 лит П,
+            Санкт-Петербург<br>
+            <br>
             +7 800 555-86-28</p>
         <button class="write-us main-red-button" type="button">Напишите нам</button>           
     </article>
