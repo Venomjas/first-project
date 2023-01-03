@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="container page-header">
+    <header class="page-header">
         <div class="navigation-container container">
             <a href="" class="link">
                 <img src="./image/nerds-logo.svg" class="logo" alt="Логотип Нердс" width="160" height="65">
@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="navigation-item">
-                        <a class="link navigation-link" href="shop.html">Магазин</a>
+                        <a class="link navigation-link" href="catalog.html">Магазин</a>
                     </li>
 
                     <li class="navigation-item">
@@ -35,60 +35,91 @@
                     </li>  
 
                     <li class="navigation-item basket-item">
-                        <a class="link navigation-link" href="basket.html">Корзина</a>
+                        <a class="link navigation-link basket-link" href="basket.html">Корзина</a>
                     </li>
                 </ul>  
             </nav>
         </div>
-    </header>  
-    <h1 class="title-magazin container">Магазин готовых шаблонов</h1>
-    <main class="catalog-products container">  
+    </header>
+    <h1 class=" title-magazin">Магазин готовых шаблонов</h1> 
+    <main class="main-container catalog-products container"> 
         <div class="catalog-filter">
             <form action="#" method="GET"> 
                 <fieldset class="radio radio-1">
-                    <legend class="legend">cтоимость:</legend>
-                    <input type="range" min="0" max="150 000" name="cost" id="cost">
-
-                <label for="cost-min">
-                    <input type="number" name="cost" id="cost-min">
-                </label>
-                <label for="cost-max">
-                    <input type="number" name="cost" id="cost-max">
-                </label>
+                    <legend class="main-black-color sorting-legend">стоимость:</legend>
+                    <div class="outer">
+                        <div class="bar"> 
+                            <div class=" range left-range"></div>
+                            <div class="full-bar"></div>
+                            <div class="range right-range"></div>
+                        </div>  
+                    </div>
+                    <div class="price-field">
+                        <div>
+                            <label for="price-min">от</label>
+                            <input class="price-area price-area-min"type="text" id="price-min">
+                        </div>
+                        <div>
+                            <label class="price-max"for="price-max">до</label>
+                            <input class="price-area price-area-max"type="text" id="price-max">
+                        </div>
+                    </div>
                 </fieldset>
 
                 <fieldset class="radio radio-2">
                     <legend class="legend">сетка:</legend>
                     
-                    <label>
-                        <input type="radio" name="grid" value="adaptive">Адаптивная
+                    <label class="radio-option">
+                        <input class="radio-input" type="radio" name="grid" value="adaptive" checked>
+                        <span class="radio-button"></span>
+                        Адаптивная
                     </label>
                     
-                    <label>
-                        <input type="radio" name="grid" value="fixed">Фиксированная              
+                    <label class="radio-option">
+                        <input class="radio-input" type="radio" name="grid" value="fixed">
+                        <span class="radio-button"></span>
+                        Фиксированная              
                     </label> 
-                    <label>
-                        <input type="radio" name="grid" value="rubber">Резиновая     
+                    <label class="radio-option">
+                        <input class="radio-input" type="radio" name="grid" value="rubber">
+                        <span class="radio-button"></span>
+                        Резиновая     
                     </label>
                 </fieldset>
 
                 <fieldset class="radio radio-3">
-                    <legend class="legend">особенности:</legend>
+                    <legend class="legend legend-radio-3">
+                        особенности:</legend>
 
-                    <label for="slider">слайдер</label>
-                    <input type="checkbox" name="slider" id="slider" checked>
+                    <label class="check option"for="slider">
+                        <input class="check-input"type="checkbox" name="slider" id="slider" checked>
+                        <span class="check-box"></span>
+                        Слайдер
+                    </label>    
                     
-                    <label for="adventages">список приемуществ</label>
-                    <input type="checkbox" name="adventages" id="adventages">
+                    <label class="check option" for="adventages">
+                        <input class="check-input"type="checkbox" name="adventages" id="adventages">
+                        <span class="check-box"></span>
+                        Блок преимуществ
+                    </label>
 
-                    <label for="news">новости</label>
-                    <input type="checkbox" name="news" id="news" checked>
+                    <label class="check option" for="news">
+                        <input class="check-input"type="checkbox" name="news" id="news" checked>
+                        <span class="check-box"></span>
+                        Новости
+                    </label>
 
-                    <label for="gallary">Галлерея</label>    
-                    <input type="checkbox" name="gallary" id="gallary">
+                    <label class="check option" for="gallary"> 
+                        <input class="check-input"type="checkbox" name="gallary" id="gallary">
+                        <span class="check-box"></span>
+                        Галерея 
+                    </label>        
 
-                    <label for="basket">корзина</label>
-                    <input type="checkbox" name="basket" id="basket">
+                    <label class="check option" for="basket">
+                        <input class="check-input"type="checkbox" name="basket" id="basket">
+                        <span class="check-box"></span>
+                        Корзина
+                    </label>
                 </fieldset>
 
                 <button class="submit button" type="submit">Показать</button>
@@ -98,7 +129,7 @@
         <div class="catalog-right-column">
             <section class="sorting">
                 <ul class="sorting-list">
-                    <li class="sorting-title">
+                    <li class="sorting-title main-black-color">
                         сортировать:
                     </li>
                     <li  class="sorting-setting">
@@ -125,7 +156,7 @@
                             <img src="./image/img-sedona 1.png" width="358" height="578">
                             <div class="product-description">
                                 <h3 class="templates-title">Sedona</h3>
-                                <p class="templates-sub">информационный сайт<br> для туристов</p>
+                                <p class="templates-sub">Информационный сайт<br> для туристов</p>
                                 <a href="" class="price-button link main-red-button">9900 ₽</a> 
                             </div>
                         </article>
