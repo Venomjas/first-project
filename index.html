@@ -39,44 +39,43 @@
                 </nav>
             </div>
         </header>
-        <main class="main-container main-index">            
+        <main>            
             <section class="slider">
                 <div class="container">
-                    <div class="slide slide-1">
+                    <div class="slide slide-1 slide-active">
                         <p class="lead main-black-color">Долго, дорого, скрупулезно.</p>
                         <p class="dop-lead">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                         <a href="" class="more main-red-button">Узнать больше</a>
                     </div>
                     <div class="slide slide-2">                        
                         <p class="lead">Любим математику как никто другой</p>
-                        <p class="dop-lead">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                        <p class="dop-lead">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
                         <a href="" class="more main-red-button">Узнать больше</a>
                     </div>
                     <div class="slide slide-3">
-                        <p class="lead">Только ночь,только хардкор</p>
-                        <p class="dop-lead">Работать днем, как все? Мы против этого.
+                        <p class="lead">Только ночь,<br>только хардкор</p>
+                        <p class="dop-lead">Работать днем, как все? Мы против этого.<br>
                             Ближе к полуночи работа только начинается.</p>
                         <a href="" class="more main-red-button">Узнать больше</a>
                     </div>
-                    <div>
-                        <ul class="pages-slider">
-                            <li>
-                                <button class="page-slide" type="button">
+                    <ul class="pages-slider">
+                        <li class="page-slider-item">
+                            <button class="page-slide page-slide-active" type="button" aria-label="1 слайд">
 
-                                </button>
-                            </li>
-                            <li>
-                                <button class="page-slide" type="button">
+                            </button>
+                        </li>
+                        <li class="page-slider-item">
+                            <button class="page-slide" type="button">
 
-                                </button>
-                            </li>
-                            <li>
-                                <button class="page-slide" type="button">
+                            </button>
+                        </li>
+                        <li class="page-slider-item">
+                            <button class="page-slide" type="button">
 
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+                            </button>
+                        </li>
+                    </ul>
+                <script src="slider.js"></script>
                 </div>
             </section>                
             <section class="container servise-container">
@@ -99,7 +98,7 @@
                         <h3 class="servise-title">презентации</h3>
                         <p class="servise-description">Вы даже не подозреваете насколько вы изумительны!</p>
                         <a href="" class="link buy yellow-buy">Заказать</a>
-                    </li>         
+                    </li>        
                 </ul>            
             </section> 
             <div class="line-under-servise"></div>  
@@ -179,9 +178,12 @@
                     Санкт-Петербург<br>
                     <br>
                     +7 800 555-86-28</p>
-                <button class="write-us main-red-button" type="button">Напишите нам</button>           
+                <button class="write-us main-red-button modal-show" type="button">Напишите нам</button>           
             </article>
-            <div style="position:relative;overflow:hidden;"><iframe class="map-iframe"src="https://yandex.ru/map-widget/v1/-/CCUjz2FnGA" width="100%" height="400" frameborder="0" allowfullscreen="false" style="position:relative;"></iframe></div>
+            <div id ="map"></div>
+            <!-- <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A37380c945732f96af5d9e6d46778512d45f1be5c6af3f235b3fb543d015003a0&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe></div> -->
+             <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=bf51683e-e246-4aa7-a141-777391f3731d" type="text/javascript"></script> 
+            <script src="./map.js"></script>
             <div class="social-list">
                 <ul class="social network-list">
                     <li class="social-network-item">
@@ -213,26 +215,36 @@
             </div>
         </footer>
         <section class="form-write-us">
-            <h2 class="main-black-color write">Напишите нам</h2>
-            <form action="" method="post">
-            <div class="form-list">  
-                <div class="form-item">
-                    <p class="names">Ваше имя:</p>
-                    <input  class="name-and-mail" type="text" name="name" placeholder="Имя Фамилия"><br>
+            <div class="overlay">
+                <div class="modal-content">
+                    <h2 class="main-black-color write">Напишите нам</h2>
+                    <button  class="exit" type="button"></button>
+                
+                    <form class="form-js" action="" method="post">
+                    <div class="form-list">  
+                        <div class="form-item">
+                            <p class="names">Ваше имя:</p>
+                            <input  class="name name-and-mail" type="text" name="name" placeholder="Имя Фамилия"><br>
+                        </div>
+                        <div class="form-item">
+                            <p class="names">Ваш email:</p>
+                            <input class="mail name-and-mail" type="email" name="email" id="email"placeholder="email@example.com "><br>
+                        </div>   
+                        <div class="form-item">
+                            <p class="names">Текст письма</p>
+                            <span class="symbol-counter">0 / 1000</span>
+                        <textarea  class="letter"style="width:760px; height:118px;"name="post" placeholder="В свободной форме"></textarea><br>
+                        </div>   
+                        <div>
+                            <button class="main-red-button send"type="submit">Отправить</button>
+                        </div> 
+                    </div>    
+                    </form>
                 </div>
-                <div class="form-item">
-                    <p class="names">Ваш email:</p>
-                    <input class="name-and-mail" type="email" name="email" id="email"placeholder="email@example.com "><br>
-                </div>   
-                <div class="form-item">
-                    <p class="names">Текст письма</p>
-                <textarea  class="letter"style="width:760px; height:118px;"name="post" placeholder="В свободной форме"></textarea><br>
-                </div>   
-                <div>
-                    <button class="main-red-button send"type="submit">Отправить</button>
-                </div> 
-            </div>    
-            </form>
+            </div>
         </section>
+        <script src="main.js"></script>
+        <script src="./validationForm.js"></script>
+        <script src="./letter-counter.js"></script>
     </body>    
 </html> 
