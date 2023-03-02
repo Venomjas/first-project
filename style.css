@@ -201,7 +201,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-    flex-wrap: wrap;
 }
 .information {
     width: 1156px;
